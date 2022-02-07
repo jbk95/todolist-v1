@@ -1,4 +1,5 @@
 //jshint esversion:6
+module.exports.getDate = getDate; //no parentesis to not activate function
 
 function getDate() {
   let today = new Date();
@@ -8,6 +9,18 @@ function getDate() {
     month: "long"
   };
 
+
+  let day = today.toLocaleDateString("en-US", options);
+  return day;
+}
+
+module.exports.getDay = getDay;
+
+function getDay() {
+  let today = new Date();
+  let options = {
+    weekday: "long"
+  };
 
   let day = today.toLocaleDateString("en-US", options);
   return day;
