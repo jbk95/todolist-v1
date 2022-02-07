@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>To Do List</title>
-  </head>
-  <body>
+<%- include("header") -%>
   <div class="box" id="heading">
     <h1> <%= listTitle %> </h1>
   </div>
@@ -22,12 +15,4 @@
         <button type="submit" name="list" value=<%= listTitle %>>+</button>
       </form>
   </div>
-
-
-
-
-  </body>
-  <<footer>
-    Copyright 2022 Joanbelk Garcia Alvarado
-  </footer>
-</html>
+<%- include("footer") %>
