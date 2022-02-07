@@ -1,7 +1,5 @@
 //jshint esversion:6
-module.exports.getDate = getDate; //no parentesis to not activate function
-
-function getDate() {
+module.exports.getDate = function() {
   let today = new Date();
   let options = {
     weekday: "long",
@@ -14,9 +12,7 @@ function getDate() {
   return day;
 }
 
-module.exports.getDay = getDay;
-
-function getDay() {
+module.exports.getDay = function() {
   let today = new Date();
   let options = {
     weekday: "long"
